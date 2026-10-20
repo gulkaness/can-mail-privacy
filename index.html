@@ -18,7 +18,7 @@
 <nav><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
 
 <h2 id="tr">Türkçe</h2>
-<p class="meta"><b>Son güncelleme:</b> 9 Ekim 2026<br><b>Yayıncı:</b> Gulkan CAN<br><b>İletişim:</b> <a href="https://github.com/gulkaness/can-mail-privacy/issues">github.com/gulkaness/can-mail-privacy/issues</a></p>
+<p class="meta"><b>Son güncelleme:</b> 20 Ekim 2026<br><b>Yayıncı:</b> Gulkan CAN<br><b>İletişim:</b> <a href="https://github.com/gulkaness/can-mail-privacy/issues">github.com/gulkaness/can-mail-privacy/issues</a></p>
 <p>Can Mail, e-posta hesaplarınızı tek yerden okumanızı ve yönetmenizi sağlayan bir masaüstü uygulamasıdır.</p>
 
 <h3>Verileriniz nerede tutulur?</h3>
@@ -33,8 +33,11 @@
 <p><b>Komut satırı erişimi:</b> Varsayılan olarak kapalıdır. Ayarlar'dan açarsanız, kendi bilgisayarınızda çalışan bir program yerel bir kanal üzerinden maillerinizi okuyabilir, arayabilir ve okundu işaretleyebilir (kanal rastgele ad ve jetonla korunur, ağdan erişilemez). Mail göndermek her seferinde uygulamada sizden onay ister. Şifreleriniz paylaşılmaz. Ayarı kapatınca kanal kapanır.</p>
 <p><b>Günlük dosyası:</b> Uygulama, sorun gidermeye yardımcı olmak için bilgisayarınızda <code>%APPDATA%\Can Mail\logs</code> klasöründe kısa bir günlük tutar (hata kodları, hesap durumu). Şifre ve ileti içeriği yazılmaz, e-posta adreslerinin yalnızca alan adı kalır. Günlük hiçbir yere gönderilmez; yalnızca siz "Teşhis bilgisini kopyala" derseniz panonuza kopyalanır.</p>
 
+<p><b>Takvim, notlar ve hatırlatmalar:</b> Takvim etkinlikleriniz, notlarınız ve hatırlatmalarınız da yalnızca bilgisayarınızda tutulur. Resmi tatiller ve özel günler internet bağlantısı olmadan uygulamanın içinde hesaplanır. Bir hesabınızın takvimini bağlarsanız (Outlook/Hotmail/Microsoft 365 için Microsoft Graph; iCloud, Yandex, Fastmail gibi hesaplar için CalDAV) Can Mail etkinlikleri yalnızca o hesabın sağlayıcısının sunucusuyla eşitler. Bir takvim adresine (iCal/.ics ya da webcal) abone olursanız uygulama o adrese doğrudan bilgisayarınızdan en çok saatte bir kez istek yapar; bu sırada IP adresiniz o sunucuya görünür. Bir takvim davetine "Kabul / Belki / Reddet" dediğinizde ya da katılımcılara davet gönderdiğinizde yanıt e-postası yalnızca sizin onayınızla gönderilir. Başkalarının istediği okundu bilgisi kendiliğinden gönderilmez.</p>
+<p><b>Okundu bilgisi:</b> Bir mail yazarken isterseniz "okundu bilgisi iste" düğmesini açabilirsiniz; bu yalnızca mailin başlığına bir istek ekler, yanıt vermek alıcının programına ve tercihine kalmıştır.</p>
+<p><b>Arka planda çalışma:</b> İsteğe bağlı bir ayar açılırsa pencereyi kapattığınızda Can Mail, takvim hatırlatmalarının gelebilmesi için Windows görev çubuğunun bildirim alanında çalışmaya devam eder. Bu bir ek veri toplamaz; tamamen kapatmak için simgeden "Çıkış" seçilir.</p>
 <h3>Şifreler ve oturum anahtarları</h3>
-<p>Hesap şifreleriniz ve Microsoft oturum anahtarlarınız, Windows'un kullanıcıya özel şifreleme özelliğiyle (DPAPI) <b>şifrelenerek</b> bilgisayarınızda saklanır. Şifreleme kullanılamıyorsa uygulama şifre saklamayı reddeder. Microsoft hesaplarında giriş, Microsoft'un kendi giriş sayfasında yapılır; şifrenizi uygulama görmez. İstenen izinler: postayı okuma/yazma (Mail.ReadWrite), posta gönderme (Mail.Send), temel profil (User.Read) ve oturumun sürmesi (offline_access).</p>
+<p>Hesap şifreleriniz ve Microsoft oturum anahtarlarınız, Windows'un kullanıcıya özel şifreleme özelliğiyle (DPAPI) <b>şifrelenerek</b> bilgisayarınızda saklanır. Şifreleme kullanılamıyorsa uygulama şifre saklamayı reddeder. Microsoft hesaplarında giriş, Microsoft'un kendi giriş sayfasında yapılır; şifrenizi uygulama görmez. İstenen izinler: postayı okuma/yazma (Mail.ReadWrite), posta gönderme (Mail.Send), temel profil (User.Read) ve oturumun sürmesi (offline_access). Yalnızca siz takvimi bağlarsanız ayrıca takvimi okuma/yazma izni (Calendars.ReadWrite) istenir.</p>
 
 <h3>Güvenlik</h3>
 <ul>
@@ -54,7 +57,7 @@
 <p>Bu politika değişirse bu sayfa güncellenir. Sorularınız için yukarıdaki iletişim bağlantısını kullanabilirsiniz.</p>
 
 <h2 id="en">English</h2>
-<p class="meta"><b>Last updated:</b> 9 October 2026<br><b>Publisher:</b> Gulkan CAN<br><b>Contact:</b> <a href="https://github.com/gulkaness/can-mail-privacy/issues">github.com/gulkaness/can-mail-privacy/issues</a></p>
+<p class="meta"><b>Last updated:</b> 20 October 2026<br><b>Publisher:</b> Gulkan CAN<br><b>Contact:</b> <a href="https://github.com/gulkaness/can-mail-privacy/issues">github.com/gulkaness/can-mail-privacy/issues</a></p>
 <p>Can Mail is a desktop app that lets you read and manage your email accounts in one place.</p>
 
 <h3>Where is your data kept?</h3>
@@ -69,8 +72,11 @@
 <p><b>Command-line access:</b> Off by default. If you turn it on in Settings, a program running on your own computer can read and search your mail and mark it as read through a local channel (random name and token, never reachable from the network). Sending mail always asks for your approval in the app. Passwords are never exposed. Turning the setting off closes the channel.</p>
 <p><b>Log file:</b> To help with troubleshooting, the app keeps a short log on your computer in <code>%APPDATA%\Can Mail\logs</code> (error codes, account status). Passwords and message content are never written, and email addresses keep only their domain. The log is never sent anywhere; it is copied to your clipboard only if you choose "Copy diagnostics".</p>
 
+<p><b>Calendar, notes and reminders:</b> Your calendar events, notes and reminders are also kept only on your computer. Public holidays and special days are calculated inside the app with no internet connection. If you connect an account's calendar (Microsoft Graph for Outlook/Hotmail/Microsoft 365; CalDAV for accounts such as iCloud, Yandex or Fastmail), Can Mail syncs events only with that account provider's servers. If you subscribe to a calendar address (iCal/.ics or webcal), the app requests that address directly from your computer at most once an hour; your IP address is visible to that server. When you answer a calendar invitation ("Accept / Tentative / Decline") or send invitations to attendees, the reply email is sent only with your confirmation. Read receipts that others request are never sent automatically.</p>
+<p><b>Read receipts:</b> When writing a mail you can turn on "request read receipt"; this only adds a request to the message header, and answering it is up to the recipient's program and choice.</p>
+<p><b>Running in the background:</b> If you turn on an optional setting, Can Mail keeps running in the Windows notification area when you close the window so that calendar reminders can arrive. It collects no additional data; choose "Quit" from the icon to close it completely.</p>
 <h3>Passwords and sign-in tokens</h3>
-<p>Account passwords and Microsoft sign-in tokens are stored on your computer <b>encrypted</b> with Windows' per-user encryption (DPAPI). If encryption is unavailable, the app refuses to store them. For Microsoft accounts, you sign in on Microsoft's own page; the app never sees your password. Permissions requested: read/write mail (Mail.ReadWrite), send mail (Mail.Send), basic profile (User.Read) and staying signed in (offline_access).</p>
+<p>Account passwords and Microsoft sign-in tokens are stored on your computer <b>encrypted</b> with Windows' per-user encryption (DPAPI). If encryption is unavailable, the app refuses to store them. For Microsoft accounts, you sign in on Microsoft's own page; the app never sees your password. Permissions requested: read/write mail (Mail.ReadWrite), send mail (Mail.Send), basic profile (User.Read) and staying signed in (offline_access). Only if you connect the calendar, calendar read/write permission (Calendars.ReadWrite) is also requested.</p>
 
 <h3>Security</h3>
 <ul>
